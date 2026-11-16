@@ -10,6 +10,7 @@ class Bingo {
     for(let i=1;i<=Number($('.js-select-numbers').val());i++){
       this.stack.push(i);
     }
+    this.result_count = 0;
     $('[id^="js-result_tr"]').empty();
   }
   play(){
